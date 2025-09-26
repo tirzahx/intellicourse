@@ -21,6 +21,9 @@ def chat_with_agent(request: QueryRequest):
     
     final_state = graph.invoke({"messages": [("user", request.query)]})
     answer = final_state["messages"][-1].content
-    return QueryResponse(answer=answer)
+    return QueryResponse(
+        answer=answer,
+        source_tool=final_state.get("source_tool"),
+        retrieved_context=final_state.get("retrieved_context"))
 
 #to run- uvicorn api:app --reload
