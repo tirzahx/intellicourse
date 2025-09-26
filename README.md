@@ -84,7 +84,7 @@ The `/chat` endpoint is the main interface for interacting with the agent. It ac
 
 ### **Sample Query and Response**
 
-You can test the endpoint using Swagger UI or a Python script.
+You can test the endpoint using Swagger UI or Python's requests library
 
 #### **Query**
 
