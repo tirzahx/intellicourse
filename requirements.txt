@@ -7,3 +7,7 @@ python-dotenv
 langchain-groq
 sentence-transformers
 langchain-huggingface
+langchain-tavily
+langgraph
+fastapi 
+uvicorn
